@@ -6,6 +6,8 @@ section{
     @include center(700px);
     @include stack();
     padding-bottom: 15px;
+    
+    
 }
 
 aside{
@@ -16,11 +18,37 @@ article{
     @include column(2/3);
 }
 
-img{
+footer img{
   
     @include column(1/10);
 }
 
-footer{
-    color: #d41c1c;
+
+.hero-unit{
+    height: 200px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+    
+    img{
+        @include column(3/8);
+        padding: 20px;
+        
+    }
+    button{ @include column(1/2);}
+       
+    
+    .icon_row{
+        
+    }
 }
+
+
+.icon_row{  
+   img{
+         @include column(1/10);
+    }
+}
+
+
+
+
