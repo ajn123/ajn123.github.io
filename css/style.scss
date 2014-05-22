@@ -11,44 +11,72 @@ section{
 }
 
 aside{
-    @include column(1/3);
+    @include column(4/10);
 }
 
 article{
-    @include column(2/3);
+    @include column(6/10);
 }
 
-footer img{
-  
-    @include column(1/10);
-}
 
 
 .hero-unit{
-    height: 200px;
-    -moz-border-radius: 50px;
-    border-radius: 50px;
+    // needs latest Compass, add '@import "compass"' to your scss
+    background: rgb(242, 242, 242); /* Old browsers */
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 20px;
+    padding-bottom: 10px;
     
-    img{
-        @include column(3/8);
-        padding: 20px;
-        
+    min-height: 230px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    
+    a{
+       
+        img{
+            padding-top: 10px;
+            @include center();
+            
+        }
+        button{
+             
+        }
     }
-    button{ @include column(1/2);}
+   
        
     
-    .icon_row{
-        
-    }
+ 
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
 }
 
 
 .icon_row{  
-   img{
-         @include column(1/10);
+   button{
+       @include stack();
+     @include column(6/10);
     }
 }
 
+
+#footer {
+ min-width: 700px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+    
+  position: absolute;
+  bottom: 0;
+  /* Set the fixed height of the footer here */
+  background-color: rgb(125,206,207);
+}
 
 
 
