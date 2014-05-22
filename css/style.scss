@@ -1,0 +1,26 @@
+@import 'jeet/index';
+
+//@include edit();
+
+section{
+    @include center(700px);
+    @include stack();
+    padding-bottom: 15px;
+}
+
+aside{
+    @include column(1/3);
+}
+
+article{
+    @include column(2/3);
+}
+
+img{
+  
+    @include column(1/10);
+}
+
+footer{
+    color: #d41c1c;
+}
