@@ -33,20 +33,12 @@ article{
     border-radius: 10px;
     
     a{
-       
         img{
             padding-top: 10px;
             @include center();
             
         }
-        button{
-             
-        }
     }
-   
-       
-    
- 
 }
 
 html {
@@ -61,7 +53,7 @@ body {
 
 .icon_row{  
    button{
-       @include stack();
+     @include stack();
      @include column(6/10);
     }
 }
@@ -69,13 +61,21 @@ body {
 
 #footer {
  min-width: 700px;
+    border-color: #db3535;
+    
   -moz-border-radius: 5px;
   border-radius: 5px;
     
-  position: absolute;
+  position: relative;
   bottom: 0;
   /* Set the fixed height of the footer here */
   background-color: rgb(125,206,207);
+    
+    
+    li:hover{
+        color: #0a101a;
+        
+    }
 }
 
 

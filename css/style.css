@@ -142,9 +142,12 @@ body {
 
 #footer {
   min-width: 700px;
+  border-color: #db3535;
   -moz-border-radius: 5px;
   border-radius: 5px;
-  position: absolute;
+  position: relative;
   bottom: 0;
   /* Set the fixed height of the footer here */
   background-color: #7dcecf; }
+  #footer li:hover {
+    color: #0a101a; }
