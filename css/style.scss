@@ -11,10 +11,12 @@ section{
 }
 
 aside{
+     @include stack();
     @include column(4/10);
 }
 
 article{
+     @include stack();
     @include column(6/10);
 }
 
@@ -60,6 +62,7 @@ body {
 
 
 #footer {
+    @include stack();
  min-width: 700px;
     border-color: #db3535;
     

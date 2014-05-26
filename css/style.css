@@ -39,6 +39,12 @@ section {
     margin-right: auto; }
 
 aside {
+  display: block;
+  clear: both;
+  float: none;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
   *zoom: 1;
   float: left;
   display: inline;
@@ -49,6 +55,10 @@ aside {
   width: 38.2%;
   margin-left: 0%;
   margin-right: 3%; }
+  aside:first-child {
+    margin-left: auto; }
+  aside:last-child {
+    margin-right: auto; }
   aside:before, aside:after {
     content: '';
     display: table; }
@@ -58,6 +68,12 @@ aside {
     margin-right: 0%; }
 
 article {
+  display: block;
+  clear: both;
+  float: none;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
   *zoom: 1;
   float: left;
   display: inline;
@@ -68,6 +84,10 @@ article {
   width: 58.8%;
   margin-left: 0%;
   margin-right: 3%; }
+  article:first-child {
+    margin-left: auto; }
+  article:last-child {
+    margin-right: auto; }
   article:before, article:after {
     content: '';
     display: table; }
@@ -141,6 +161,12 @@ body {
     margin-right: 0%; }
 
 #footer {
+  display: block;
+  clear: both;
+  float: none;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
   min-width: 700px;
   border-color: #db3535;
   -moz-border-radius: 5px;
@@ -149,5 +175,9 @@ body {
   bottom: 0;
   /* Set the fixed height of the footer here */
   background-color: #7dcecf; }
+  #footer:first-child {
+    margin-left: auto; }
+  #footer:last-child {
+    margin-right: auto; }
   #footer li:hover {
     color: #0a101a; }
