@@ -98,10 +98,6 @@ article {
   article a img {
     display: block;
     margin: auto; }
-  article a img:hover {
-    border-style: solid;
-    border-width: 4px;
-    border-color: #000; }
 
 .hero-unit {
   background: #f2f2f2;

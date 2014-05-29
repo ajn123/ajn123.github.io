@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="css/font-awesome-4.1.0/css/font-awesome.min.css">
     <link href="css/brand-buttons.min.css" rel="stylesheet">
     <link href="css/brand-buttons-inversed.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/animate.min.css">
     
     <script src="js/respond.min.js"></script>
 </head>
@@ -67,13 +68,9 @@
                 </button>
                 </a>
                 
-               
-                    
-                
-                
                 <a href="https://www.youtube.com/user/AppleJuiceScholars">
                 <button class=" btn btn-youtube-inversed cbutton">
-                       <i class="fa fa-youtube-play"></i> 
+                    <i class="fa fa-youtube-play"></i> 
                 </button>
                 </a>
                 
@@ -98,8 +95,6 @@
                 </article>
           
             </div>
-            
-       
             </section>
         
         
@@ -115,8 +110,8 @@
         <article>
             I am interested in making daily Youtube videos centered around Computer Science.  For my summer of code, I made a ruby group on Github that focuses on creative, maneagable Ruby projects.  I plan on moving on to more Rails projects as the summer progresses.  Feel free to contact to collaborate and just talk.
             
-        <a href="https://github.com/RubyQuarry">
-            <img src="img/linecons_e010(0)_128.png" ></img>
+        <a   href="https://github.com/RubyQuarry">
+            <img id="animay"   src="img/linecons_e010(0)_128.png" ></img>
         </a>
             
         </article>
@@ -129,17 +124,19 @@
         
     <div id="footer">
   
-        <article>
-    <ul class="list-group">
+    <article>
+        <ul class="list-group">
         
           <li class="list-group-item list-group-item-success">This website made with the help of: </li>  
         <a href="http://fontawesome.io/icons/">
-      <li class="list-group-item list-group-item-info"><i class="fa fa-hand-o-right"></i> Font Awesome </li> </a>
-    <a href="http://getbootstrap.com/">
+        <li class="list-group-item list-group-item-info"><i class="fa fa-hand-o-right"></i> Font Awesome </li> 
+        </a>
+        <a href="http://getbootstrap.com/">
       <li class="list-group-item list-group-item-info"><i class="fa fa-bold"></i>
-      Bootstrap</li> </a>
-    <a href="http://theaqua.github.io/BrandButtons/">
-      <li class="list-group-item list-group-item-info"><i class="fa fa-cubes"></i>
+      Bootstrap</li> 
+        </a>
+        <a href="http://theaqua.github.io/BrandButtons/">
+            <li class="list-group-item list-group-item-info"><i class="fa fa-cubes"></i>
           Brand Buttons</li>
         </a>
         <a href="http://jeet.gs/" >
@@ -155,9 +152,9 @@
         
         <aside>
             
-            <ul class="list-group">
+        <ul class="list-group">
         
-          <li class="list-group-item list-group-item-success"></i> This website made with the help of: </li>  
+          <li class="list-group-item list-group-item-success">This website made with the help of: </li>  
         <a href="http://fontawesome.io/icons/">
       <li class="list-group-item list-group-item-info"><i class="fa fa-hand-o-right"></i> Font Awesome </li> </a>
     <a href="http://getbootstrap.com/">
@@ -167,15 +164,13 @@
       <li class="list-group-item list-group-item-info"><i class="fa fa-cubes"></i>
           Brand Buttons</li>
         </a>
-        <a href="http://jeet.gs/" >
+        <a href="http://jeet.gs/">
       <li class="list-group-item list-group-item-info"><i class="fa fa-magic">
-           Jeet Grid System</i> 
+           Jeet Grid Systemo</i> 
              </li>
             </a>
       </ul>
-       
-        
-        
+    
         </aside>
      
     </div>
@@ -186,6 +181,14 @@
         <!-- Javascript  -->
         <script src="http://code.jquery.com/jquery-latest.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
+    
+        <script type="text/javascript">
+            $("#animay").mouseenter(function() {
+                    $(this).addClass('animated pulse');
+                }).mouseleave(function() {
+                    $(this).removeClass('animated pulse');
+                });
+        </script>
     </body>
 
 </html>
