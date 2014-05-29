@@ -97,9 +97,7 @@ article {
     margin-right: 0%; }
   article a img {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin: 30px; }
+    margin: auto; }
   article a img:hover {
     border-style: solid;
     border-width: 4px;
