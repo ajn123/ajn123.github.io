@@ -85,9 +85,12 @@ article {
     clear: both; }
   article:last-child {
     margin-right: 0%; }
-  article a img {
-    padding-top: 10px;
+  article div {
+    padding-left: 5em;
+    display: block;
     margin: auto; }
+    article div a img {
+      padding-top: 10px; }
 
 .hero-unit {
   background: #f2f2f2;

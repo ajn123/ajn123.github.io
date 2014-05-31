@@ -15,16 +15,21 @@ aside{
     @include column(4/10);
 }
 
-  article{
+article{
     @include column(6/10);
       
-      a{
-          img{
-              padding-top: 10px;
-              margin:auto;
-          }
-          
+    div{
+        padding-left: 5em;
+      display:block;
+      margin:auto;
+        a{
+            img{
+                padding-top: 10px;
+                }
+         }
       }
+      
+      
 }
 
 
