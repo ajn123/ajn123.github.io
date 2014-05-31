@@ -16,12 +16,11 @@ aside{
 }
 
   article{
-    @include stack();
     @include column(6/10);
       
       a{
           img{
-              display:block;
+              padding-top: 10px;
               margin:auto;
           }
           

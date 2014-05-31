@@ -68,12 +68,6 @@ aside {
     margin-right: 0%; }
 
 article {
-  display: block;
-  clear: both;
-  float: none;
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
   *zoom: 1;
   float: left;
   display: inline;
@@ -84,10 +78,6 @@ article {
   width: 58.8%;
   margin-left: 0%;
   margin-right: 3%; }
-  article:first-child {
-    margin-left: auto; }
-  article:last-child {
-    margin-right: auto; }
   article:before, article:after {
     content: '';
     display: table; }
@@ -96,7 +86,7 @@ article {
   article:last-child {
     margin-right: 0%; }
   article a img {
-    display: block;
+    padding-top: 10px;
     margin: auto; }
 
 .hero-unit {
