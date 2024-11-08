@@ -1,3 +1,16 @@
+# Creating a blog post with jekyll
+
+```bash
+bundle exec jekyll new my-awesome-site
+```
+
+# Run the site locally
+
+```bash
+bundle exec jekyll serve
+```
+
+
 # Chirpy Starter
 
 [![Gem Version](https://img.shields.io/gem/v/jekyll-theme-chirpy)][gem]&nbsp;

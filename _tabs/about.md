@@ -4,5 +4,8 @@ icon: fas fa-info-circle
 order: 4
 ---
 
-> Add Markdown syntax content to file `_tabs/about.md`{: .filepath } and it will show up on this page.
-{: .prompt-tip }
+Currently, I am a master's student at Virginia Tech studying Computer Science. 
+
+I am interested in software development, machine learning, and AI.
+
+I enjoy running, building community and side projects when I have the time.
