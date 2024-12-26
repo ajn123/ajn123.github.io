@@ -1,6 +1,6 @@
 ---
-layout: page
 title: Working with Docker Compose
+tags: [docker, docker compose, microservices]
 ---
 
 
@@ -31,13 +31,15 @@ It ALSO overwrites the commands you do in the container.  This means if you copy
 
 
 # 2 Make sure you have the correct permissions
+I can't express how important this is.  You can get many errors if you don't have the correct permissions.
 
 ```bash
-sudo chown -R $USER:$USER .
+sudo usermod -aG docker $USER
+newgrp docker
+chown -R $USER:$USER .
 ```
 
 This will give you the correct permissions to the files and directories.
-
 
 # 3 Make sure you .env file works for all environments
 
@@ -56,9 +58,9 @@ when you do 'docker compose build' it will build the docker image.  But if you d
 If you do 'docker compose up --no-cache' it will build the docker image from scratch and then run it.  This means that if you make a change to the docker file you need to do 'docker compose up --no-cache' before you can run the container.
 
 
-#6 understand the COPY command
+# 6 understand the COPY command
 the command command can look simple but it can be tricky.  If you are copying a file from the host machine to the container you need to make sure that the file exists in the host machine.  If you are copying a file from the build stage to the run stage you need to make sure that the file exists in the build stage.
-Also understand the importance of slashes in the path.  If you are copying a file from the host machine to the container you need to make sure that the file exists in the host machine.  If you are copying a file from the build stage to the run stage you need to make sure that the file exists in the build stage.
+Also understand the importance of slashes in the path.  If you are copying a file from the host machine to the container you need to make sure that the file exists in the host machine. 
 
 ```yaml
 COPY --from=build-stage /app/build /app/build
