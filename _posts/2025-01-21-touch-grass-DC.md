@@ -26,7 +26,7 @@ I created a Kubernetes Ingress resource to route traffic to the application.  I 
 ## Analytics 
 I used grafana, prometheus, and kibana to monitor the application.  I used the [kube-state-metrics](https://github.com/kubernetes/kube-state-metrics) to get the metrics from the Kubernetes cluster.  I used the [prometheus-operator](https://github.com/prometheus-operator/prometheus-operator) to deploy the prometheus and grafana.  I used fluentd to collect the logs from the containers and send them to loki.
 
-## Monitoring
-I used the [prometheus-operator](https://github.com/prometheus-operator/prometheus-operator) to deploy the prometheus and grafana.  I used the [kube-state-metrics](https://github.com/kubernetes/kube-state-metrics) to get the metrics from the Kubernetes cluster.  I used the [prometheus-operator](https://github.com/prometheus-operator/prometheus-operator) to deploy the prometheus and grafana.  I used fluentd to collect the logs from the containers and send them to logz.io.
+## Filament
+I chose [Filament](https://filamentphp.com/) as an admin portal to allow editing of backend data. Filament is great for editing as well as searching your models in a nice pre-build UI.
 
 Source Code: [https://github.com/ajn123/TouchGrassDC](https://github.com/ajn123/TouchGrassDC)
