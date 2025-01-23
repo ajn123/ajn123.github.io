@@ -5,11 +5,14 @@ bundle exec jekyll new my-awesome-site
 ```
 
 # Run the site locally
-
 ```bash
 bundle exec jekyll serve
 ```
 
+# Add a new post
+```bash
+jekyll compose post "My First Post"
+```
 
 # Chirpy Starter
 
